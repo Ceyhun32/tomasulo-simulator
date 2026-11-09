@@ -1,0 +1,10 @@
+# Validierung 2: RAW-Abhaengigkeitskette
+# R1 -> R4 -> R7: Jede Instruktion haengt von der vorherigen ab
+v
+ADD R1, R2, R3
+MUL R4, R1, R5
+SUB R7, R4, R6
+v
+s
+h
+i

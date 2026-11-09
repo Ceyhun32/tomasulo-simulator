@@ -1,0 +1,11 @@
+# Validierung 5: LOAD und STORE mit CDB-Weiterleitung
+# LOAD laedt einen Wert, ADD benutzt ihn (RAW ueber CDB), STORE speichert
+v
+LOAD R1, 0(R2)
+ADD R3, R1, R4
+STORE R3, 10(R5)
+LOAD R6, 5(R0)
+v
+s
+h
+i

@@ -1,0 +1,12 @@
+# Validierung 4: WAR- und WAW-Scheinabhaengigkeiten
+# ADD schreibt R1, MUL liest R1 (RAW), SUB schreibt R1 erneut (WAW mit ADD)
+# DIV liest R3 bevor SUB es ueberschreibt (WAR wird durch Renaming aufgeloest)
+v
+ADD R1, R2, R3
+MUL R4, R1, R5
+SUB R1, R6, R7
+DIV R5, R1, R3
+v
+s
+h
+i

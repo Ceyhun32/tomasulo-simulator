@@ -1,0 +1,11 @@
+# Validierung 1: Keine Datenabhaengigkeiten
+# Alle Instruktionen koennen parallel ausgefuehrt werden
+v
+ADD R0, R1, R2
+ADD R3, R4, R5
+ADD R6, R1, R4
+SUB R7, R2, R5
+v
+s
+h
+i
